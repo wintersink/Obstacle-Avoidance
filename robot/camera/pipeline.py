@@ -60,9 +60,9 @@ def build_pipeline() -> dai.Pipeline:
 
     # ── Stereo depth ──────────────────────────────────────────────────────────
     stereo = pipeline.create(dai.node.StereoDepth)
-    # FAST_DENSITY: dense depth coverage optimised for speed — ideal for
-    #   real-time obstacle avoidance (renamed from HIGH_DENSITY in newer depthai)
-    stereo.setDefaultProfilePreset(dai.node.StereoDepth.PresetMode.FAST_DENSITY)
+    # HIGH_DENSITY: extended disparity + SGBM algorithm — dense close-range
+    #   depth coverage ideal for obstacle avoidance (depthai 2.x API)
+    stereo.setDefaultProfilePreset(dai.node.StereoDepth.PresetType.HIGH_DENSITY)
     stereo.initialConfig.setMedianFilter(dai.MedianFilter.KERNEL_7x7)
     # Left-right consistency check removes stereo artifacts on shiny surfaces
     stereo.setLeftRightCheck(True)

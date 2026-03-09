@@ -1,5 +1,5 @@
-# OAK-D Lite interface (DepthAI SDK)
-depthai>=2.24.0
+# OAK-D Lite interface (DepthAI SDK) — pinned to 2.x; v3 has breaking API changes
+depthai>=2.24,<3
 
 # AprilTag detection — C library with Python bindings
 pupil-apriltags>=1.0.4
