@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /c/Projects/Obstacle-Avoidance/.claude/worktrees/quizzical-bouman log --oneline --all)",
+      "WebSearch",
+      "WebFetch(domain:www.robotshop.com)",
+      "WebFetch(domain:www.yahboom.net)",
+      "WebFetch(domain:category.yahboom.net)",
+      "WebFetch(domain:github.com)"
+    ]
+  }
+}

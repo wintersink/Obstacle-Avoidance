@@ -1,0 +1,14 @@
+# OAK-D Lite interface (DepthAI SDK)
+depthai>=2.24.0
+
+# AprilTag detection — C library with Python bindings
+pupil-apriltags>=1.0.4
+
+# I2C communication with Yahboom motor driver (STM32 coprocessor)
+smbus2>=0.4.3
+
+# Numerical processing — depth frame analysis
+numpy>=1.26
+
+# OpenCV — frame conversion, grayscale, standalone tests
+opencv-python-headless>=4.9
