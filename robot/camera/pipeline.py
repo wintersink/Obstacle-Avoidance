@@ -62,7 +62,7 @@ def build_pipeline() -> dai.Pipeline:
     stereo = pipeline.create(dai.node.StereoDepth)
     # HIGH_DENSITY: extended disparity + SGBM algorithm
     #   → better coverage for close-range obstacles at the cost of some CPU
-    stereo.setDefaultProfilePreset(dai.node.StereoDepth.PresetType.HIGH_DENSITY)
+    stereo.setDefaultProfilePreset(dai.node.StereoDepth.PresetMode.HIGH_DENSITY)
     stereo.initialConfig.setMedianFilter(dai.MedianFilter.KERNEL_7x7)
     # Left-right consistency check removes stereo artifacts on shiny surfaces
     stereo.setLeftRightCheck(True)
